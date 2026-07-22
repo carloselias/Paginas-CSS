@@ -1,12 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #d0ecea;
+  background-color: #e8ddeb;
 }
 
 /* El Header como cuadro contenedor */
 .header-principal {
-    max-width: auto; /* Ajusta automáticamente el ancho máximo */
     margin: 0 auto;
     padding: 20px;
     background-color: #6284a5;
@@ -91,7 +90,7 @@ body {
 }
 
 /* Diseño adaptable para celulares */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .contenedor-principal {
         /* En pantallas chicas, todo pasa a una sola columna */
         grid-template-columns: 1fr;
