@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introducción a CSS</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="/css/estilos2.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal de la página -->
+    <header id="encabezado">
+
+        <h1>Mi primera página con CSS</h1>
+
+        <p class="subtitulo">
+            Aprendiendo HTML semántico y hojas de estilo
+        </p>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Primera sección -->
+        <section id="inicio" class="seccion">
+
+            <h2>Bienvenidos al desarrollo web</h2>
+
+            <p>
+                HTML permite crear la estructura de una página y CSS permite
+                cambiar su apariencia.
+            </p>
+
+            <img
+                class="imagen-principal"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                alt="Computadora utilizada para desarrollo web"
+            >
+
+        </section>
+
+        <!-- Sección de artículos -->
+        <section id="articulos" class="seccion">
+
+            <h2>Temas del curso</h2>
+
+            <div class="contenedor-articulos">
+
+                <article class="tarjeta">
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        HTML se utiliza para crear títulos, párrafos, imágenes,
+                        enlaces, tablas y formularios.
+                    </p>
+
+                    <a href="#" class="boton">Leer más</a>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        CSS permite aplicar colores, bordes, fondos, tamaños,
+                        alineación y diferentes diseños.
+                    </p>
+
+                    <a href="#" class="boton">Leer más</a>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        JavaScript permite agregar interacción y comportamiento
+                        dinámico a las páginas web.
+                    </p>
+
+                    <a href="#" class="boton">Leer más</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Información complementaria -->
+        <aside class="informacion">
+
+            <h2>Dato importante</h2>
+
+            <p>
+                En CSS se utilizan selectores para indicar qué elementos de HTML
+                queremos modificar.
+            </p>
+
+        </aside>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="seccion">
+
+            <h2>Formulario de contacto</h2>
+
+            <form>
+
+                <label for="nombre">Nombre:</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escriba su nombre"
+                >
+
+                <label for="correo">Correo electrónico:</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                >
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escriba su mensaje"
+                ></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>
+            © 2026 Curso de Desarrollo Web
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
