@@ -11,8 +11,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #662253;
+    color: #06202B;
+    background-color: #FDEB9E;
 }
 
 /* ===========================
@@ -20,7 +20,7 @@ body {
    =========================== */
 
 #encabezado {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7AE2CF 0%, #077A7D 100%);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -90,16 +90,16 @@ main {
 }
 
 .seccion h2 {
-    color: #667eea;
+    color: #077A7D;
     font-size: 2em;
     margin-bottom: 20px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #7AE2CF;
     padding-bottom: 10px;
 }
 
 .seccion p {
     font-size: 1.05em;
-    color: #555;
+    color: #077A7D;
     margin-bottom: 20px;
 }
 
@@ -133,7 +133,7 @@ main {
    =========================== */
 
 .tarjeta {
-    background: white;
+    background: #7AE2CF;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 25px;
@@ -146,11 +146,11 @@ main {
 .tarjeta:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-color: #667eea;
+    border-color: #077A7D;
 }
 
 .tarjeta h3 {
-    color: #667eea;
+    color: #077A7D;
     font-size: 1.5em;
     margin-bottom: 15px;
 }
@@ -167,7 +167,7 @@ main {
 
 .boton {
     display: inline-block;
-    background-color: #667eea;
+    background-color: #077A7D;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -179,12 +179,120 @@ main {
 }
 
 .boton:hover {
-    background-color: #764ba2;
+    background-color: #7AE2CF;
     transform: translateX(5px);
 }
 
 .boton:active {
     transform: translateX(5px) scale(0.98);
+}
+
+/* ===========================
+   INFORMACIÓN (ASIDE)
+   =========================== */
+
+.informacion {
+    background: linear-gradient(135deg, #f0f4ff 0%, #FDEB9E 100%);
+    border-left: 10px solid #077A7D;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+}
+
+.informacion h2 {
+    color: #077A7D;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.informacion p {
+    color: #06202B;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* ===========================
+   FORMULARIOS (FORM, INPUT, TEXTAREA)
+   =========================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    color: #077A7D;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #7AE2CF;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #06202B;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #077A7D;
+    box-shadow: 0 0 8px rgba(7, 122, 125, 0.3);
+    background-color: #f9feff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+form button {
+    background-color: #077A7D;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #7AE2CF;
+    color: #077A7D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(7, 122, 125, 0.3);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(7, 122, 125, 0.2);
 }
 
 /* ===========================
